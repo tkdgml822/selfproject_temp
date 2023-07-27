@@ -5,6 +5,7 @@ import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.annotation.Nullable;
 
+// 화면 전환 메소드
 public class SignupIntent extends AppCompatActivity {
 
     @Override

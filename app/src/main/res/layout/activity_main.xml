@@ -27,10 +27,10 @@
                 android:id="@+id/loginText"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="로그인"
+                android:text="@string/login"
                 android:textAlignment="center"
                 android:textColor="@color/blue"
-                android:textSize="36dp"
+                android:textSize="36sp"
                 android:textStyle="bold" />
 
             <EditText
@@ -38,31 +38,34 @@
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:background="@drawable/custom_edittext"
-                android:drawableLeft="@drawable/baseline_person_24"
-                android:hint="아이디"
+                android:drawableStart="@drawable/baseline_person_24"
+                android:hint="@string/id"
                 android:padding="8dp"
                 android:textColor="@color/black"
                 android:textColorHighlight="@color/cardview_dark_background"
-                android:layout_marginTop="40dp" />
+                android:layout_marginTop="40dp"
+                android:importantForAutofill="no"
+                android:inputType="text"/>
 
             <EditText
                 android:id="@+id/password"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:background="@drawable/custom_edittext"
-                android:drawableLeft="@drawable/baseline_lock_24"
-                android:hint="비밀번호"
+                android:drawableStart="@drawable/baseline_lock_24"
+                android:hint="@string/password"
                 android:inputType="textPassword"
                 android:padding="8dp"
                 android:textColor="@color/black"
                 android:textColorHighlight="@color/cardview_dark_background"
-                android:layout_marginTop="40dp" />
-
+                android:layout_marginTop="40dp"
+                android:importantForAutofill="no"/>
+<!--  로그인 버튼 -->
             <Button
                 android:id="@+id/loginButton"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
-                android:text="로그인"
+                android:text="@string/login"
                 android:textSize="18sp"
                 android:textColor="@color/white"
                 android:layout_marginTop="30dp"
@@ -73,16 +76,17 @@
 
     </androidx.cardview.widget.CardView>
 
+
     <Button
         android:id="@+id/signup_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:padding="8dp"
-        android:text="회원가입"
+        android:text="@string/signup"
         android:textAlignment="center"
         android:textColor="@color/blue"
         android:backgroundTint="@color/white"
         android:layout_marginBottom="20dp" />
 
-
 </LinearLayout>
+
